@@ -1,1 +1,1 @@
-(()=>{const d=document.documentElement,b=document.getElementById("themeToggle"),saved=localStorage.getItem("tbe-theme")||"light";d.dataset.theme=saved;b?.addEventListener("click",()=>{const n=d.dataset.theme==="light"?"dark":"light";d.dataset.theme=n;localStorage.setItem("tbe-theme",n)})})();
+(()=>{const d=document.documentElement,b=
