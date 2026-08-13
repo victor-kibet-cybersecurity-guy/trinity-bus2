@@ -26,7 +26,7 @@ img{max-width:100%;display:block}
 .site-header{
   position:sticky;top:0;z-index:50;
   background:rgba(7,17,31,.92);
-  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
   border-bottom:1px solid rgba(255,255,255,.08)
 }
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}

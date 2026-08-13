@@ -42,7 +42,7 @@
     position: fixed;
     inset: 0;
     background: rgba(7, 17, 38, 0.65);
-    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
     z-index: 1999;
     opacity: 0;
     visibility: hidden;
@@ -74,7 +74,7 @@
     transform: translateX(100%) !important;
     transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1) !important;
     overflow-y: auto !important;
-    overscroll-behavior: contain !important;
+    
     border: 0 !important;
     border-left: 1px solid var(--border) !important;
   }
@@ -183,7 +183,7 @@
   }
 
   /* Hero & Other Mobile Adjustments */
-  .hero { min-height: auto; padding: 7rem 0 3rem; }
+  .hero { min-height:0; padding: 7rem 0 3rem; }
   .hero-content { width: min(100% - 2rem, 1200px); }
   .search-panel, .grid-2, .grid-3, .grid-4, .stats, .booking-layout, .form-grid, .toolbar, .footer-grid {
     grid-template-columns: 1fr !important;
