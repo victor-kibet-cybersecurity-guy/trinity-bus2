@@ -1,0 +1,54 @@
+:root{
+  --bg:#07111f;--panel:#0d1b2d;--panel2:#11243a;--text:#f4f7fb;--muted:#aab8ca;
+  --line:#223851;--brand:#f5b41b;--brand2:#ffd978;--radius:20px;--shadow:0 20px 50px rgba(0,0,0,.28)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+background:linear-gradient(180deg,#07111f 0%,#091827 45%,#07111f 100%);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(7,17,31,.93);backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+.brand{font-weight:900}.brand span{color:var(--brand)}
+.nav-links{display:flex;gap:18px;align-items:center;color:#dce6f2;font-size:.95rem}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:#fff;border-radius:12px;padding:9px 12px}
+.hero{padding:76px 0 40px}
+.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid #3d4f66;border-radius:999px;background:rgba(255,255,255,.03);
+font-size:.87rem}
+h1{font-size:clamp(2.2rem,5vw,4.4rem);line-height:1.02;margin:18px 0}
+h2{font-size:clamp(1.6rem,3vw,2.4rem);margin:0 0 8px}
+h3{margin:0 0 8px}
+p{margin:0 0 14px}.muted{color:var(--muted)}
+.hero p{max-width:760px;color:var(--muted);font-size:1.08rem}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:14px;
+font-weight:800;border:1px solid transparent}
+.btn-primary{background:var(--brand);color:#111}.btn-secondary{border-color:#40536b;background:rgba(255,255,255,.03)}
+.grid{display:grid;gap:18px}.quick-grid{grid-template-columns:repeat(4,1fr);margin-top:30px}
+.card{background:linear-gradient(180deg,var(--panel),#0b1727);border:1px solid var(--line);border-radius:var(--radius);
+box-shadow:var(--shadow)}
+.quick-card{padding:18px}.label{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#8193a8}
+.value{font-size:1.1rem;font-weight:800;margin-top:6px}
+section{padding:34px 0}.content-card{padding:28px}.info-layout{grid-template-columns:1.15fr .85fr}
+.route-line{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:14px}
+.stop{padding:9px 12px;border-radius:999px;background:#12263c;border:1px solid #29435e}.arrow{color:var(--brand);font-weight:900}
+.booking{padding:26px}.form-grid{grid-template-columns:repeat(2,1fr)}
+.field label{display:block;font-weight:700;margin-bottom:7px}
+.field input,.field select{width:100%;padding:13px 14px;border-radius:12px;border:1px solid #34506c;background:#091728;color:white;outline:none}
+.notice{border-left:4px solid var(--brand);background:#101f31;padding:15px 16px;border-radius:10px;color:#dce6f2}
+.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:620px}
+th,td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left}th{background:#102137}
+.faq{display:grid;gap:10px}details{background:#0d1c2e;border:1px solid var(--line);border-radius:14px;padding:15px 17px}
+summary{cursor:pointer;font-weight:800}
+.related{grid-template-columns:repeat(3,1fr)}.link-card{padding:20px;transition:.2s}.link-card:hover{transform:translateY(-3px);border-color:#4e6782}
+.cta{padding:34px;text-align:center;background:linear-gradient(135deg,#132941,#0b1828)}
+.site-footer{padding:34px 0 90px;color:#9fb0c4;border-top:1px solid var(--line);margin-top:40px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:60;background:#22c55e;color:#06130b;width:58px;height:58px;
+border-radius:50%;display:grid;place-items:center;font-weight:900;box-shadow:0 14px 35px rgba(0,0,0,.35)}
+@media(max-width:900px){.quick-grid{grid-template-columns:repeat(2,1fr)}.info-layout,.related,.footer-grid{grid-template-columns:1fr}}
+@media(max-width:720px){
+.nav-links{display:none;position:absolute;left:4%;right:4%;top:72px;background:#0b1929;border:1px solid var(--line);border-radius:16px;padding:14px;flex-direction:column;align-items:stretch}
+.nav-links.open{display:flex}.menu-btn{display:block}.form-grid,.quick-grid{grid-template-columns:1fr}.hero{padding-top:48px}.content-card,.booking{padding:20px}}
