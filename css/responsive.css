@@ -1,0 +1,250 @@
+/* Base Desktop Rules for Drawer Elements */
+.drawer-header, .drawer-actions, .drawer-footer, .nav-overlay {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .search-panel { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .route-row { grid-template-columns: 2fr 1fr 1fr auto; }
+  .route-row > *:nth-child(4), .route-row > *:nth-child(5) { display: none; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile Slide-Out Drawer Menu (< 768px) */
+@media (max-width: 768px) {
+  :root { --header: 68px; }
+
+  /* Nav Toggle Button */
+  .nav-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-left: auto;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 1.25rem;
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  .nav-toggle:active {
+    transform: scale(0.94);
+  }
+
+  /* Backdrop Overlay */
+  .nav-overlay {
+    display: block !important;
+    position: fixed;
+    inset: 0;
+    background: rgba(7, 17, 38, 0.65);
+    backdrop-filter: blur(4px);
+    z-index: 1999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .nav-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Slide-Out Drawer Navigation */
+  .main-nav {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: min(340px, 86vw) !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    z-index: 2000 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 4px !important;
+    padding: 20px 18px !important;
+    box-shadow: -10px 0 35px rgba(0, 0, 0, 0.35) !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain !important;
+    border: 0 !important;
+    border-left: 1px solid var(--border) !important;
+  }
+  .main-nav.open {
+    transform: translateX(0) !important;
+  }
+
+  /* Drawer Header */
+  .drawer-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .drawer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 850;
+    font-size: 1.05rem;
+    color: var(--text);
+  }
+  .drawer-close {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text);
+    display: grid;
+    place-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  /* Drawer Actions - Focus on Search & Booking */
+  .drawer-actions {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .drawer-btn {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 0.92rem;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  /* Drawer Navigation Links */
+  .main-nav a:not(.drawer-btn):not(.drawer-wa-btn) {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+    transition: background 0.18s ease, color 0.18s ease;
+  }
+  .main-nav a:not(.drawer-btn):not(.drawer-wa-btn):hover,
+  .main-nav a:not(.drawer-btn):not(.drawer-wa-btn).active {
+    background: var(--surface-2);
+    color: var(--primary);
+  }
+
+  /* Drawer Footer */
+  .drawer-footer {
+    display: flex !important;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+  }
+  .drawer-wa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #25D366;
+    color: #fff !important;
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+  }
+  .drawer-support-text {
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Hero & Other Mobile Adjustments */
+  .hero { min-height: auto; padding: 7rem 0 3rem; }
+  .hero-content { width: min(100% - 2rem, 1200px); }
+  .search-panel, .grid-2, .grid-3, .grid-4, .stats, .booking-layout, .form-grid, .toolbar, .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .actions { display: grid; grid-template-columns: 1fr; }
+  .actions .btn { width: 100%; justify-content: center; }
+  .card { padding: 1rem; }
+
+  .mobile-book-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 62px;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    z-index: 950;
+    padding-bottom: calc(0.55rem + env(safe-area-inset-bottom));
+  }
+  .mobile-book-bar a {
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    font-size: 0.82rem;
+    color: var(--text);
+  }
+
+  .float-action.call { bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
+  .float-action.whatsapp { bottom: calc(9.5rem + env(safe-area-inset-bottom)); }
+  .seo-table { display: block; overflow-x: auto; white-space: nowrap; }
+  .toc { position: static; }
+  .lead { font-size: 1.05rem; }
+  .section { padding-block: 3rem; }
+  .section-sm { padding-block: 1.5rem; }
+}
+
+@media (max-width: 425px) {
+  .container, .hero-content { width: min(100% - 26px, var(--max)); }
+  .search-panel { padding: 12px; }
+  .seat-map { grid-template-columns: repeat(5, 38px); gap: 7px; }
+  .card { padding: 18px; }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1600px) {
+  .container, .content-shell, .hero-content, .breadcrumbs { max-width: 1400px; }
+  .prose { max-width: 84ch; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
