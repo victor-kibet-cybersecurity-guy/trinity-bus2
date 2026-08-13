@@ -36,3 +36,12 @@ pre,code{max-width:100%;overflow-wrap:anywhere}h1,h2,h3,p,a,li{overflow-wrap:bre
 .float-action.call svg{display:block!important;width:25px!important;height:25px!important;fill:none!important;stroke:currentColor!important;stroke-width:2!important;stroke-linecap:round!important;stroke-linejoin:round!important}
 .float-action.call:focus-visible{outline:3px solid #fff;outline-offset:3px}
 @media(max-width:768px){.float-action.call{right:max(16px,env(safe-area-inset-right))!important;bottom:calc(144px + env(safe-area-inset-bottom))!important;width:56px!important;height:56px!important;min-width:56px!important;min-height:56px!important;z-index:2890!important}html.menu-open .float-action.call{opacity:0!important;visibility:hidden!important;pointer-events:none!important}}
+
+
+/* Homepage hero: prevent clipping below the sticky header */
+.hero{min-height:0!important;align-items:start!important;padding:0!important}
+.hero-content{margin:0 auto!important;padding:clamp(48px,6vw,80px) 0 clamp(56px,7vw,96px)!important}
+.hero h1{max-width:1050px;font-size:clamp(3rem,6vw,5.4rem);text-wrap:balance}
+.hero .lead{max-width:820px}
+@media(min-width:769px) and (max-height:760px){.hero-content{padding:34px 0 48px!important}.hero h1{font-size:clamp(2.7rem,5.4vw,4.7rem);margin-top:.1em}.hero .lead{font-size:1.08rem}.hero .actions{margin:18px 0}.hero .search-panel{margin-top:20px}}
+@media(max-width:768px){.hero-content{padding:34px 0 48px!important}.hero h1{font-size:clamp(2.35rem,11vw,3.5rem)}.hero .lead{font-size:1rem}.hero .search-panel{margin-top:18px}}
