@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll(".accordion-btn").forEach(b=>b.addEventListener("click",()=>{const item=b.closest(".accordion-item");item.classList.toggle("open");b.setAttribute("aria-expanded",item.classList.contains("open"))})))

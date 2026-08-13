@@ -1,0 +1,14 @@
+{
+  "name": "trinity-bus",
+  "version": "1.0.0",
+  "description": "Trinity Bus Express - East Africa Bus Routes & WhatsApp Booking",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'No build step needed for static site'"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

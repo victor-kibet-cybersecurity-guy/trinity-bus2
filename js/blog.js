@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const q=document.getElementById("blogSearch");q?.addEventListener("input",()=>{const s=q.value.toLowerCase();document.querySelectorAll(".blog-card").forEach(c=>c.hidden=!c.textContent.toLowerCase().includes(s))})})

@@ -1,0 +1,8 @@
+{
+  "name": "Trinity Bus Express",
+  "description": "Cross-border bus travel information and WhatsApp booking for East Africa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

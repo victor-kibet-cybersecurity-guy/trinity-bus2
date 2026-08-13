@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>document.querySelectorAll("[data-gallery-filter]").forEach(b=>b.onclick=()=>{const f=b.dataset.galleryFilter;document.querySelectorAll(".gallery-item").forEach(i=>i.hidden=f!=="all"&&i.dataset.category!==f)}))

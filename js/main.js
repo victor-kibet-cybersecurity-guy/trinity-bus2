@@ -1,0 +1,132 @@
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-current-year]").forEach(e => e.textContent = new Date().getFullYear());
+
+  const nav = document.querySelector(".main-nav");
+  const toggle = document.querySelector(".nav-toggle");
+
+  if (nav && toggle) {
+    let overlay = document.querySelector(".nav-overlay");
+    if (!overlay) {
+      overlay = document.createElement("div");
+      overlay.className = "nav-overlay";
+      document.body.appendChild(overlay);
+    }
+
+    if (!nav.querySelector(".drawer-header")) {
+      const isSub = window.location.pathname.includes('/destinations/') || window.location.pathname.includes('/routes/') || window.location.pathname.includes('/travel-guides/') || window.location.pathname.includes('/blog/');
+      const basePrefix = isSub ? "../" : "./";
+
+      const drawerHeader = document.createElement("div");
+      drawerHeader.className = "drawer-header";
+      drawerHeader.innerHTML = `
+        <div class="drawer-brand">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>Trinity Express</span>
+        </div>
+        <button class="drawer-close" aria-label="Close menu">✕</button>
+      `;
+      nav.insertBefore(drawerHeader, nav.firstChild);
+
+      const drawerActions = document.createElement("div");
+      drawerActions.className = "drawer-actions";
+      drawerActions.innerHTML = `
+        <a href="${basePrefix}booking.html" class="btn btn-primary drawer-btn">🚌 Book Seat Online</a>
+        <a href="${basePrefix}routes.html" class="btn btn-outline drawer-btn">🔍 Search Routes</a>
+      `;
+      nav.insertBefore(drawerActions, drawerHeader.nextSibling);
+
+      const drawerFooter = document.createElement("div");
+      drawerFooter.className = "drawer-footer";
+      drawerFooter.innerHTML = `
+        <a href="https://wa.me/254754932823" target="_blank" rel="noopener" class="drawer-wa-btn">
+          💬 WhatsApp Reservation Desk
+        </a>
+        <p class="drawer-support-text">Official Cross-Border Express Support</p>
+      `;
+      nav.appendChild(drawerFooter);
+
+      const closeBtn = drawerHeader.querySelector(".drawer-close");
+      closeBtn?.addEventListener("click", closeDrawer);
+    }
+
+    function openDrawer() {
+      nav.classList.add("open");
+      overlay.classList.add("show");
+      toggle.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeDrawer() {
+      nav.classList.remove("open");
+      overlay.classList.remove("show");
+      toggle.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    }
+
+    toggle.addEventListener("click", () => {
+      if (nav.classList.contains("open")) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    });
+
+    overlay.addEventListener("click", closeDrawer);
+
+    nav.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", closeDrawer);
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("open")) {
+        closeDrawer();
+      }
+    });
+  }
+
+  const progress = document.getElementById("scrollProgress"), top = document.getElementById("backToTop");
+  const onScroll = () => {
+    if (progress) {
+      const h = document.documentElement.scrollHeight - innerHeight;
+      progress.style.width = (scrollY / (h || 1) * 100) + "%";
+    }
+    if (top) {
+      top.style.display = scrollY > 500 ? "grid" : "none";
+    }
+  };
+  addEventListener("scroll", onScroll, { passive: true });
+  top?.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
+
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add("visible");
+  }), { threshold: 0.12 });
+  document.querySelectorAll("[data-reveal]").forEach(e => io.observe(e));
+
+  function network() {
+    document.querySelector(".offline-banner")?.remove();
+    if (!navigator.onLine) {
+      const b = document.createElement("div");
+      b.className = "offline-banner";
+      b.textContent = "You are offline. Saved pages remain available.";
+      document.body.appendChild(b);
+    }
+  }
+  addEventListener("online", network);
+  addEventListener("offline", network);
+  network();
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  }
+
+  document.querySelectorAll("[data-counter]").forEach(el => {
+    const end = +el.dataset.counter;
+    let n = 0;
+    const tick = () => {
+      n += Math.ceil(end / 50);
+      el.textContent = n >= end ? end : n;
+      if (n < end) requestAnimationFrame(tick);
+    };
+    tick();
+  });
+});
