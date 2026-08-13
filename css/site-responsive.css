@@ -29,3 +29,10 @@ pre,code{max-width:100%;overflow-wrap:anywhere}h1,h2,h3,p,a,li{overflow-wrap:bre
 @media(min-width:1920px){html{font-size:17px}.container,.hero-content,.breadcrumbs,.content-shell{max-width:1480px}}
 @media(hover:none){.card:hover,.btn:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* Persistent Call action: kept separate from WhatsApp */
+.float-action.call{display:grid!important;place-items:center!important;position:fixed!important;right:max(18px,env(safe-area-inset-right))!important;bottom:max(92px,calc(92px + env(safe-area-inset-bottom)))!important;width:58px!important;height:58px!important;min-width:58px!important;min-height:58px!important;border-radius:50%!important;background:#153b86!important;color:#fff!important;opacity:1!important;visibility:visible!important;z-index:2790!important;box-shadow:0 8px 24px rgba(0,0,0,.32)!important;text-decoration:none!important}
+.float-action.call svg{display:block!important;width:25px!important;height:25px!important;fill:none!important;stroke:currentColor!important;stroke-width:2!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.float-action.call:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:768px){.float-action.call{right:max(16px,env(safe-area-inset-right))!important;bottom:calc(144px + env(safe-area-inset-bottom))!important;width:56px!important;height:56px!important;min-width:56px!important;min-height:56px!important;z-index:2890!important}html.menu-open .float-action.call{opacity:0!important;visibility:hidden!important;pointer-events:none!important}}
