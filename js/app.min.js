@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded",()=>{
   addEventListener("keydown",e=>{if(e.key==="Escape")close()});
   addEventListener("resize",()=>{if(innerWidth>768)close()},{passive:true});
  }
- const progress=document.getElementById("scrollProgress"),top=document.getElementById("backToTop");
- const onScroll=()=>{if(progress){const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(scrollY/(h||1)*100)+"%"}if(top)top.style.display=scrollY>500?"grid":"none"};
- addEventListener("scroll",onScroll,{passive:true});top?.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+ const progress=document.getElementById("scrollProgress");
+ const onScroll=()=>{if(progress){const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(scrollY/(h||1)*100)+"%"}};
+ addEventListener("scroll",onScroll,{passive:true});
  if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});document.querySelectorAll("[data-reveal]").forEach(e=>io.observe(e))}
  const network=()=>{document.querySelector(".offline-banner")?.remove();if(!navigator.onLine){const b=document.createElement("div");b.className="offline-banner";b.textContent="You are offline. Saved pages remain available.";document.body.appendChild(b)}};addEventListener("online",network);addEventListener("offline",network);network();
  if("serviceWorker" in navigator)navigator.serviceWorker.register("/trinity-bus2/sw.js").catch(()=>{});
