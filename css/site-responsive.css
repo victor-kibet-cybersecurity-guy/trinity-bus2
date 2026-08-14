@@ -57,3 +57,9 @@ pre,code{max-width:100%;overflow-wrap:anywhere}h1,h2,h3,p,a,li{overflow-wrap:bre
 /* High-contrast logo presentation */
 .brand-logo{background:#fff;padding:3px 5px;border:1px solid #dce5f2;box-shadow:0 2px 8px rgba(11,23,54,.12)}
 .footer .brand-logo{background:#fff;border-color:rgba(255,255,255,.45)}
+
+
+/* Booking office feature */
+.contact-office-feature{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);align-items:center;gap:clamp(24px,4vw,52px);margin-bottom:clamp(28px,5vw,56px);padding:clamp(16px,2.5vw,28px);border:1px solid #dce5f2;border-radius:24px;background:#fff;box-shadow:0 16px 44px rgba(11,38,84,.12);overflow:hidden}
+.contact-office-photo{margin:0;min-width:0}.contact-office-photo img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px;background:#e9eef7}.contact-office-photo figcaption{padding:10px 4px 0;color:#52617a;font-size:.9rem;line-height:1.45}.contact-office-copy{min-width:0}.contact-office-copy h2{margin-top:.25rem;text-wrap:balance}.contact-office-copy .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.gallery-item[data-category="service"] img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+@media(max-width:850px){.contact-office-feature{grid-template-columns:minmax(0,1fr)}.contact-office-copy .actions{display:grid;grid-template-columns:minmax(0,1fr)}.contact-office-copy .btn{width:100%;text-align:center}}
