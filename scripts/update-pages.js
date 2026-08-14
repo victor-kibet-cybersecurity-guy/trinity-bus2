@@ -91,14 +91,17 @@ function replaceHeadAndFooter(filePath) {
   const description = descMatch ? descMatch[0] : '';
 
   // build new head by injecting page-specific title/description
-  const newHead = headerPartial.replace('<!--PAGE_TITLE-->', title).replace('<!--PAGE_DESCRIPTION-->', description);
+  const relativeRoot = path.relative(path.dirname(filePath), workspaceRoot).replaceAll('\\', '/');
+  const rootPrefix = relativeRoot ? relativeRoot + '/' : '';
+  const newHead = headerPartial.replace('<!--PAGE_TITLE-->', title).replace('<!--PAGE_DESCRIPTION-->', description).replaceAll('<!--ROOT-->', rootPrefix);
+  const newFooter = footerPartial.replaceAll('<!--ROOT-->', rootPrefix);
 
   // replace existing head
   src = src.replace(/<head[\s\S]*?<\/head>/i, newHead);
 
   // replace footer
   if (src.match(/<footer[\s\S]*?<\/footer>/i)) {
-    src = src.replace(/<footer[\s\S]*?<\/footer>/i, footerPartial);
+    src = src.replace(/<footer[\s\S]*?<\/footer>/i, newFooter);
   } else {
     // append footer before closing body
     src = src.replace(/<\/body>/i, footerPartial + '\n</body>');
@@ -115,8 +118,9 @@ function ensurePartialsDir() {
 
 function main() {
   ensurePartialsDir();
-  buildCssBundle();
-  buildJsBundle();
+  if (!fs.existsSync(path.join(cssDir, 'site.min.css')) || !fs.existsSync(path.join(jsDir, 'app.min.js'))) {
+    throw new Error('Run the site normalizer first so css/site.min.css and js/app.min.js exist.');
+  }
 
   const htmlFiles = getAllHtml(workspaceRoot);
   htmlFiles.forEach(f => {
