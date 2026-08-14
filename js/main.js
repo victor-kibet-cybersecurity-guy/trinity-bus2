@@ -26,6 +26,6 @@ document.addEventListener("DOMContentLoaded",()=>{
  addEventListener("scroll",onScroll,{passive:true});
  if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});document.querySelectorAll("[data-reveal]").forEach(e=>io.observe(e))}
  const network=()=>{document.querySelector(".offline-banner")?.remove();if(!navigator.onLine){const b=document.createElement("div");b.className="offline-banner";b.textContent="You are offline. Saved pages remain available.";document.body.appendChild(b)}};addEventListener("online",network);addEventListener("offline",network);network();
- if("serviceWorker" in navigator)navigator.serviceWorker.register("/trinity-bus2/sw.js").catch(()=>{});
+ if("serviceWorker" in navigator){const appScript=[...document.scripts].find(s=>/\/js\/app\.min\.js(?:$|\?)/.test(s.src));if(appScript)navigator.serviceWorker.register(new URL("../sw.js",appScript.src)).catch(()=>{})}
  document.querySelectorAll("[data-counter]").forEach(el=>{const end=+el.dataset.counter;let n=0;const tick=()=>{n+=Math.ceil(end/50);el.textContent=n>=end?end:n;if(n<end)requestAnimationFrame(tick)};tick()});
 });

@@ -11,7 +11,11 @@ const HOST = '0.0.0.0';
 
 // Serve static assets from project root
 app.use(express.static(__dirname, {
-  extensions: ['html', 'htm']
+  extensions: ['html', 'htm'],
+  setHeaders: (res, filePath) => {
+    if (/\.html?$/i.test(filePath)) res.setHeader('Cache-Control', 'no-cache');
+    else res.setHeader('Cache-Control', 'public, max-age=604800, stale-while-revalidate=86400');
+  }
 }));
 
 // Fallback to 404.html
