@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Passenger Safety & Travel Guidance | Trinity Bus Express</title>
+  <meta name="description" content="Read Trinity Bus Express passenger safety guidance covering driver standards, vehicle checks, emergency equipment, luggage security, night travel, border procedures, emergency contacts and lost property.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icons/favicon.svg"><link rel="stylesheet" href="css/site.min.css"></head>
+
+<body>
+
+<header class="site-header"><a class="brand" href="index.html"><img class="brand-logo" src="images/trinity-express-logo.webp" width="196" height="64" alt="Trinity Bus Express" decoding="async" fetchpriority="high"></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="main-nav" aria-label="Primary"><a href="index.html">Home</a><a href="routes.html">Routes</a><a href="booking.html">Book</a><a href="destinations.html">Destinations</a><details class="nav-more"><summary class="active">Explore</summary><div class="nav-more-menu"><a href="fleet.html">Fleet</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="safety.html" class="active" aria-current="page">Safety</a><a href="parcel-delivery.html">Parcel Delivery</a><a href="travel-guides.html">Travel Guides</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></div></details><a href="contact.html">Contact</a><div class="mobile-explore-links"><span>Explore Trinity Express</span><a href="fleet.html">Fleet</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="safety.html" class="active" aria-current="page">Safety</a><a href="parcel-delivery.html">Parcel Delivery</a><a href="travel-guides.html">Travel Guides</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></div></nav></header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Passenger safety and travel preparation</div>
+      <h1>Passenger Safety & Travel Guidance</h1>
+      <p>Use this page to prepare for regional and cross-border travel. It covers practical safety steps for drivers, vehicles, luggage, night travel, border crossings, emergencies and lost property.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#safety-guide">Read Safety Guide</a>
+        <a class="btn btn-secondary" href="contact.html">Contact Support</a>
+      </div>
+
+      <div class="grid trust-grid">
+        <div class="card trust-card">
+          <strong>Before departure</strong>
+          <span class="muted">Confirm your route, boarding point, reporting time and travel documents.</span>
+        </div>
+        <div class="card trust-card">
+          <strong>During travel</strong>
+          <span class="muted">Keep valuables secure, follow crew instructions and stay aware at stops.</span>
+        </div>
+        <div class="card trust-card">
+          <strong>Cross-border journeys</strong>
+          <span class="muted">Check official immigration and health requirements before travelling.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section-sm media-showcase">
+  <div class="container">
+    <figure class="media-showcase-card">
+      <img src="images/cross-border-coach-road-1280.webp" width="1396" height="1127" loading="lazy" decoding="async" alt="Trinity Express cross-border coach travelling on an East African road" srcset="images/cross-border-coach-road-640.webp 640w, images/cross-border-coach-road-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px">
+      <figcaption><strong>Regional road travel</strong><span>Plan ahead, follow crew guidance, and remain attentive throughout the journey.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+
+  <section id="safety-guide">
+    <div class="container grid section-grid">
+
+      <article class="card content-card">
+        <div class="icon">01</div>
+        <h2>Driver standards</h2>
+        <p>Professional bus operations should use properly licensed drivers who meet the legal requirements for the vehicle class and route they operate.</p>
+        <ul class="checklist">
+          <li>Drivers should hold the correct valid licence for the vehicle category.</li>
+          <li>Drivers should follow road traffic laws, speed limits and operator procedures.</li>
+          <li>Cross-border drivers should understand the routes, terminals and border procedures used on their service.</li>
+          <li>Operators should manage driving hours and rest periods in line with applicable law and internal safety procedures.</li>
+          <li>Passengers should report unsafe driving to the operator as soon as it is safe to do so.</li>
+        </ul>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">02</div>
+        <h2>Vehicle inspection</h2>
+        <p>Roadworthy buses depend on routine checks and scheduled maintenance. Passengers should never rely on appearance alone as proof of mechanical condition.</p>
+        <ul class="checklist">
+          <li>Tyres should have suitable tread and inflation.</li>
+          <li>Lights, indicators, mirrors and windscreen equipment should function correctly.</li>
+          <li>Brakes, steering and suspension should receive scheduled inspection and maintenance.</li>
+          <li>Doors, emergency exits and luggage compartments should operate correctly.</li>
+          <li>Visible defects should be reported before departure.</li>
+        </ul>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">03</div>
+        <h2>Emergency equipment</h2>
+        <p>Passenger vehicles should carry the emergency equipment required by applicable law and operator policy.</p>
+        <ul class="checklist">
+          <li>Emergency exits should remain accessible.</li>
+          <li>Fire extinguishers should be present where required and kept serviceable.</li>
+          <li>First-aid supplies should be available where required.</li>
+          <li>Reflective warning equipment and other roadside safety items should be carried where required.</li>
+          <li>Passengers should identify the nearest emergency exit after boarding.</li>
+        </ul>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">04</div>
+        <h2>Passenger conduct</h2>
+        <p>Safe travel also depends on passenger behaviour. Follow crew instructions and avoid actions that distract the driver or create risks for other passengers.</p>
+        <ul class="checklist">
+          <li>Remain seated while the bus is moving where possible.</li>
+          <li>Keep aisles and emergency exits clear.</li>
+          <li>Do not interfere with vehicle controls, doors or safety equipment.</li>
+          <li>Do not carry prohibited, hazardous or illegal items.</li>
+          <li>Treat other passengers, staff and border officials respectfully.</li>
+        </ul>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">05</div>
+        <h2>Luggage security</h2>
+        <p>Keep important documents, money, phones and other valuables with you rather than inside unattended checked luggage.</p>
+        <ul class="checklist">
+          <li>Label your luggage with your name and a reachable contact number.</li>
+          <li>Use secure zips or locks where appropriate.</li>
+          <li>Do not leave passports, cash or medication in checked luggage.</li>
+          <li>Check your bag before leaving every stop or terminal.</li>
+          <li>Keep baggage receipts or tags when the operator issues them.</li>
+        </ul>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">06</div>
+        <h2>Night travel</h2>
+        <p>Night routes require extra preparation because boarding, stopovers and arrival may happen when fewer services are open.</p>
+        <ul class="checklist">
+          <li>Confirm the exact boarding point before leaving for the terminal.</li>
+          <li>Arrive early enough to avoid rushing.</li>
+          <li>Keep your phone charged and carry a power bank if needed.</li>
+          <li>Share your travel details with a trusted person.</li>
+          <li>Arrange safe onward transport if your destination arrival is late at night or early in the morning.</li>
+        </ul>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">07</div>
+        <h2>Border procedures</h2>
+        <p>Immigration, visa, health and customs requirements depend on your nationality, destination and current government rules.</p>
+        <ul class="checklist">
+          <li>Carry valid travel identification and any required visa or permit.</li>
+          <li>Check passport validity requirements before departure.</li>
+          <li>Follow immigration and customs instructions at every border point.</li>
+          <li>Do not carry restricted goods across borders.</li>
+          <li>Use official government sources to verify current entry and health rules.</li>
+        </ul>
+        <div class="notice">Do not rely on old social media posts or screenshots for immigration requirements. Rules change.</div>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">08</div>
+        <h2>Emergency contacts</h2>
+        <p>Save the operator's current support number before departure and keep local emergency-service information for the countries on your route.</p>
+        <ul class="checklist">
+          <li>Save Trinity Bus Express support details from the Contact page.</li>
+          <li>Keep your booking reference or travel details accessible.</li>
+          <li>In a serious emergency, contact local emergency services or police first where appropriate.</li>
+          <li>Provide your bus route, current location and direction of travel when reporting an incident.</li>
+        </ul>
+        <div class="notice danger">Do not publish emergency numbers on this page unless you have verified they are current for each country served.</div>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">09</div>
+        <h2>Lost property</h2>
+        <p>If you leave an item on a bus, at a terminal or during a stopover, report it as soon as possible.</p>
+        <ul class="checklist">
+          <li>Provide your name and contact details.</li>
+          <li>Give the route, travel date and approximate departure time.</li>
+          <li>Describe the item clearly, including colour, brand or identifying marks.</li>
+          <li>Provide your seat number or booking reference if available.</li>
+          <li>Never send passwords, PINs or other sensitive account information as proof of ownership.</li>
+        </ul>
+      </article>
+
+      <article class="card content-card">
+        <div class="icon">10</div>
+        <h2>Before you travel</h2>
+        <p>A short preparation check reduces avoidable problems on long-distance routes.</p>
+        <ul class="checklist">
+          <li>Confirm the departure date and reporting time.</li>
+          <li>Confirm the boarding terminal or pick-up point.</li>
+          <li>Check current fare and payment instructions.</li>
+          <li>Verify travel documents for cross-border routes.</li>
+          <li>Carry drinking water, essential medication and a charged phone where appropriate.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Safety information summary</h2>
+      <div class="card content-card table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Passenger action</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Driver safety</td>
+              <td>Report unsafe driving or serious concerns</td>
+              <td>Helps the operator investigate safety issues</td>
+            </tr>
+            <tr>
+              <td>Vehicle safety</td>
+              <td>Report visible defects before departure</td>
+              <td>Allows staff to assess the issue before travel</td>
+            </tr>
+            <tr>
+              <td>Luggage</td>
+              <td>Keep valuables and documents with you</td>
+              <td>Reduces loss and theft risk</td>
+            </tr>
+            <tr>
+              <td>Night travel</td>
+              <td>Confirm terminals and onward transport</td>
+              <td>Reduces problems at late arrival times</td>
+            </tr>
+            <tr>
+              <td>Border travel</td>
+              <td>Check official government requirements</td>
+              <td>Entry rules and health requirements change</td>
+            </tr>
+            <tr>
+              <td>Lost property</td>
+              <td>Report the item quickly with route details</td>
+              <td>Improves the chance of locating it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="notice safe">
+        Safety information on this page provides general travel guidance. Company-specific driver training, inspection schedules, emergency equipment, insurance, operating licences and internal procedures should only be published after Trinity Bus Express verifies them.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Passenger safety FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>What should I do if I notice unsafe driving?</summary>
+          <p class="muted">Avoid confronting the driver while the vehicle is moving. Report the concern to the operator as soon as it is safe, with the route, date, time and any useful identifying details.</p>
+        </details>
+        <details>
+          <summary>Where should I keep my passport and money?</summary>
+          <p class="muted">Keep important documents, money, medication and small valuables with you rather than in unattended checked luggage.</p>
+        </details>
+        <details>
+          <summary>What should I do before travelling at night?</summary>
+          <p class="muted">Confirm your terminal, reporting time and onward transport, keep your phone charged and share your travel details with a trusted person.</p>
+        </details>
+        <details>
+          <summary>How should I confirm border requirements?</summary>
+          <p class="muted">Use current official immigration, customs and health sources for the countries on your route. Requirements differ by nationality and change over time.</p>
+        </details>
+        <details>
+          <summary>What information should I provide for lost property?</summary>
+          <p class="muted">Provide the route, date, approximate travel time, seat or booking details and a clear description of the missing item.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="card cta">
+        <h2>Need help before your journey?</h2>
+        <p class="muted">Confirm the latest terminal, departure time, fare, luggage information and route details before travelling.</p>
+        <a class="btn btn-primary" href="contact.html">Contact Trinity Bus Express</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><nav class="footer-discovery" aria-label="Explore Trinity Express"><strong>Explore Trinity Express</strong><div><a href="routes.html">Routes</a><a href="fleet.html">Fleet</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="safety.html">Safety</a><a href="parcel-delivery.html">Parcel Delivery</a><a href="travel-guides.html">Travel Guides</a><a href="contact.html">Contact</a></div></nav><div class="footer-grid"><div><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="images/trinity-express-logo.webp" width="196" height="64" alt="Trinity Bus Express" decoding="async" loading="lazy"></a><p>Cross-border bus travel information and booking requests for routes linking major East African cities across Kenya, Uganda, Rwanda, South Sudan, DRC, and Burundi.</p></div><div><h3>Routes</h3><a href="routes/nairobi-to-kampala.html">Nairobi to Kampala</a><a href="routes/nairobi-to-kigali.html">Nairobi to Kigali</a><a href="routes/nairobi-to-juba.html">Nairobi to Juba</a><a href="routes/nairobi-to-goma.html">Nairobi to Goma</a><a href="routes.html">All Routes Directory</a></div><div><h3>Travel Help</h3><a href="travel-guides.html">Travel Guides</a><a href="blog/passport-requirements.html">Travel Documents</a><a href="blog/cross-border-customs-guide.html">Border Customs Guide</a><a href="faq.html">FAQ & Help Center</a><a href="html-sitemap.html">HTML Sitemap</a></div><div><h3>Policies</h3><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a href="refund-policy.html">Cancellation & Refund Policy</a></div><div><h3>Contact</h3><a href="tel:+254754932823">+254 754 932 823</a><a href="https://wa.me/254754932823">WhatsApp Booking</a><a href="contact.html">Contact Desk</a></div></div><div class="legal">© <span data-current-year></span> Trinity Bus Express. Booking requests require verification. Prices are estimates and subject to change. | <a href="html-sitemap.html">Sitemap</a></div></footer><div class="mobile-book-bar"><a href="booking.html">Book Seat</a><a href="https://wa.me/254754932823">WhatsApp</a><a href="tel:+254754932823">Call Desk</a></div><a class="float-action whatsapp" href="https://wa.me/254754932823" aria-label="Book on WhatsApp" target="_blank" rel="noopener"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a><a class="float-action call" href="tel:+254754932823" aria-label="Call Trinity Bus Express"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a><a class="whatsapp" href="https://wa.me/254754932823" aria-label="Chat on WhatsApp">WA</a>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  }
+</script>
+
+<script src="js/app.min.js" defer></script></body>
+</html>

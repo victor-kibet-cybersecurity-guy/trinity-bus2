@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://example.com/trinity-bus-express/sitemap.xml
-Sitemap: https://example.com/trinity-bus-express/image-sitemap.xml
+
+Sitemap: https://victor-kibet-cybersecurity-guy.github.io/trinity-bus2/sitemap.xml
+Sitemap: https://victor-kibet-cybersecurity-guy.github.io/trinity-bus2/image-sitemap.xml

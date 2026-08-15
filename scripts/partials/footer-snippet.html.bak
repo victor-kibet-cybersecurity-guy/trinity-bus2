@@ -1,0 +1,14 @@
+<footer class="footer" role="contentinfo">
+  <nav class="footer-discovery" aria-label="Explore Trinity Express">
+    <strong>Explore Trinity Express</strong>
+    <div><a href="<!--ROOT-->routes.html">Routes</a><a href="<!--ROOT-->fleet.html">Fleet</a><a href="<!--ROOT-->gallery.html">Gallery</a><a href="<!--ROOT-->about.html">About</a><a href="<!--ROOT-->safety.html">Safety</a><a href="<!--ROOT-->parcel-delivery.html">Parcel Delivery</a><a href="<!--ROOT-->travel-guides.html">Travel Guides</a><a href="<!--ROOT-->contact.html">Contact</a></div>
+  </nav>
+  <div class="footer-grid">
+    <div><a class="brand footer-brand" href="<!--ROOT-->index.html"><img class="brand-logo" src="<!--ROOT-->images/trinity-express-logo.webp" width="196" height="64" alt="Trinity Bus Express" decoding="async" loading="lazy"></a><p>Cross-border bus travel information and booking requests for routes linking major East African cities.</p></div>
+    <div><h3>Routes</h3><a href="<!--ROOT-->routes/nairobi-to-kampala.html">Nairobi to Kampala</a><a href="<!--ROOT-->routes/nairobi-to-kigali.html">Nairobi to Kigali</a><a href="<!--ROOT-->routes.html">All Routes</a></div>
+    <div><h3>Travel Help</h3><a href="<!--ROOT-->travel-guides.html">Travel Guides</a><a href="<!--ROOT-->faq.html">FAQ &amp; Help Center</a><a href="<!--ROOT-->html-sitemap.html">HTML Sitemap</a></div>
+    <div><h3>Policies</h3><a href="<!--ROOT-->privacy-policy.html">Privacy Policy</a><a href="<!--ROOT-->terms.html">Terms &amp; Conditions</a><a href="<!--ROOT-->refund-policy.html">Cancellation &amp; Refund Policy</a></div>
+    <div><h3>Contact</h3><a href="tel:+254754932823">+254 754 932 823</a><a href="https://wa.me/254754932823">WhatsApp Booking</a><a href="<!--ROOT-->contact.html">Contact Desk</a></div>
+  </div>
+  <div class="legal">© <span data-current-year></span> Trinity Bus Express.</div>
+</footer>
