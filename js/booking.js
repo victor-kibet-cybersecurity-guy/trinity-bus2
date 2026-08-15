@@ -1,13 +1,11 @@
-const ROUTES = [
-  { slug: "nairobi-to-kampala", origin: "Nairobi", destination: "Kampala", country: "Uganda", flag: "🇺🇬", fare: 3500, duration: "12–14 hours", departure: "6:00 PM (Daily)", arrival: "7:00 AM next day", border: "Busia / Malaba OSBP", terminal: "River Road Terminal, Nairobi", stopovers: "Nakuru, Eldoret, Malaba, Jinja", bus: "Executive Luxury Coach" },
-  { slug: "nairobi-to-kigali", origin: "Nairobi", destination: "Kigali", country: "Rwanda", flag: "🇷🇼", fare: 5500, duration: "18–20 hours", departure: "4:00 PM (Daily)", arrival: "11:00 AM next day", border: "Gatuna / Katuna OSBP", terminal: "River Road Terminal, Nairobi", stopovers: "Nakuru, Eldoret, Kampala, Gatuna", bus: "Executive Luxury Coach" },
-  { slug: "nairobi-to-juba", origin: "Nairobi", destination: "Juba", country: "South Sudan", flag: "🇸🇸", fare: 7000, duration: "22–26 hours", departure: "2:00 PM (Mon, Wed, Sat)", arrival: "3:00 PM next day", border: "Nimule / Elegu Border", terminal: "Accra Road Terminal, Nairobi", stopovers: "Eldoret, Kampala, Gulu, Nimule", bus: "Cross-Border Express Coach" },
-  { slug: "nairobi-to-goma", origin: "Nairobi", destination: "Goma", country: "DRC", flag: "🇨🇩", fare: 7500, duration: "24–28 hours", departure: "1:00 PM (Tue, Fri)", arrival: "5:00 PM next day", border: "Grande Barrière / Gisenyi", terminal: "Accra Road Terminal, Nairobi", stopovers: "Eldoret, Kampala, Kabale, Gisenyi", bus: "Cross-Border Express Coach" },
-  { slug: "nairobi-to-bujumbura", origin: "Nairobi", destination: "Bujumbura", country: "Burundi", flag: "🇧🇮", fare: 7000, duration: "22–25 hours", departure: "3:00 PM (Wed, Sun)", arrival: "3:00 PM next day", border: "Akanyaru / Kanyaru Border", terminal: "River Road Terminal, Nairobi", stopovers: "Eldoret, Kampala, Kigali", bus: "Executive Luxury Coach" },
-  { slug: "kampala-to-nairobi", origin: "Kampala", destination: "Nairobi", country: "Kenya", flag: "🇰🇪", fare: 3500, duration: "12–14 hours", departure: "6:00 PM (Daily)", arrival: "7:00 AM next day", border: "Malaba / Busia OSBP", terminal: "Bakuli Terminal, Sir Apollo Kaggwa Rd, Kampala", stopovers: "Jinja, Malaba, Eldoret, Nakuru", bus: "Executive Luxury Coach" },
-  { slug: "kampala-to-kigali", origin: "Kampala", destination: "Kigali", country: "Rwanda", flag: "🇷🇼", fare: 2500, duration: "8–10 hours", departure: "8:00 PM (Daily)", arrival: "6:00 AM next day", border: "Gatuna OSBP", terminal: "Bakuli Terminal, Kampala", stopovers: "Masaka, Mbarara, Gatuna", bus: "Comfort Express Coach" },
-  { slug: "kigali-to-nairobi", origin: "Kigali", destination: "Nairobi", country: "Kenya", flag: "🇰🇪", fare: 5500, duration: "18–20 hours", departure: "3:00 PM (Daily)", arrival: "10:00 AM next day", border: "Gatuna OSBP", terminal: "Nyabugogo Bus Park, Kigali", stopovers: "Gatuna, Kampala, Eldoret, Nakuru", bus: "Executive Luxury Coach" }
-];
+const ROUTES = window.TBE_ROUTES || [];
+
+function localDateISO(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("bookingForm");
@@ -28,20 +26,33 @@ document.addEventListener("DOMContentLoaded", () => {
     routeSel.appendChild(opt);
   });
 
-  // Check URL query parameters
+  // Read route search values passed from the homepage/routes page.
   const urlParams = new URLSearchParams(window.location.search);
+
   const routeParam = urlParams.get("route");
   if (routeParam && ROUTES.some(r => r.slug === routeParam)) {
     routeSel.value = routeParam;
   }
 
-  // Pre-fill Date if not set
+  const passengerInput = document.getElementById("passengers");
+  const passengerParam = Number.parseInt(urlParams.get("passengers"), 10);
+  if (passengerInput && Number.isInteger(passengerParam) && passengerParam >= 1 && passengerParam <= 5) {
+    passengerInput.value = String(passengerParam);
+  }
+
   const dateInput = document.getElementById("date");
-  if (dateInput && !dateInput.value) {
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    dateInput.value = tomorrow.toISOString().split("T")[0];
-    dateInput.min = new Date().toISOString().split("T")[0];
+  if (dateInput) {
+    const today = localDateISO();
+    dateInput.min = today;
+
+    const requestedDate = urlParams.get("date");
+    if (requestedDate && /^\d{4}-\d{2}-\d{2}$/.test(requestedDate) && requestedDate >= today) {
+      dateInput.value = requestedDate;
+    } else if (!dateInput.value) {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      dateInput.value = localDateISO(tomorrow);
+    }
   }
 
   function goToStep(i) {
