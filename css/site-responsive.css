@@ -1,5 +1,5 @@
 /* Sitewide responsive and persistent-action rules */
-html{background:#f5f7fb;-webkit-text-size-adjust:100%;}
+html{background:#f5f7fb;}
 body{min-width:0;overflow-x:hidden}
 main,section,article,header,footer,nav,.container,.content-shell,.prose{min-width:0}
 img,svg,video,iframe{max-width:100%;height:auto}
