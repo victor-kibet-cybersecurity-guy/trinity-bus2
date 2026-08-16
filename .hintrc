@@ -1,0 +1,10 @@
+{
+  "ignoredUrls": [
+    {
+      "domain": "scripts/partials/header-snippet.html",
+      "hints": [
+        "apple-touch-icons"
+      ]
+    }
+  ]
+}
