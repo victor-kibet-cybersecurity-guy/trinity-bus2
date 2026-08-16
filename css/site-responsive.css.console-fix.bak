@@ -1,0 +1,86 @@
+/* Sitewide responsive and persistent-action rules */
+html{background:#f5f7fb;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-width:0;overflow-x:hidden}
+main,section,article,header,footer,nav,.container,.content-shell,.prose{min-width:0}
+img,svg,video,iframe{max-width:100%;height:auto}
+table{max-width:100%}.table-wrap,.comparison-wrapper,.seo-table{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+pre,code{max-width:100%;overflow-wrap:anywhere}h1,h2,h3,p,a,li{overflow-wrap:break-word}
+.container,.hero-content,.breadcrumbs{width:min(1200px,calc(100% - 40px));margin-left:auto;margin-right:auto}
+.persistent-whatsapp,.float-action.whatsapp{display:grid!important;place-items:center!important;position:fixed!important;right:max(18px,env(safe-area-inset-right))!important;bottom:max(22px,env(safe-area-inset-bottom))!important;width:58px!important;height:58px!important;min-width:58px!important;min-height:58px!important;border-radius:50%!important;background:#25d366!important;color:#fff!important;opacity:1!important;visibility:visible!important;z-index:2800!important;box-shadow:0 8px 24px rgba(0,0,0,.32)!important;text-decoration:none!important}
+.persistent-whatsapp svg,.float-action.whatsapp svg{display:block!important;width:29px!important;height:29px!important;fill:currentColor!important}
+.persistent-whatsapp:focus-visible,.float-action.whatsapp:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:1024px){.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.route-row{grid-template-columns:minmax(180px,2fr) repeat(2,minmax(100px,1fr)) auto}.search-panel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:768px){
+ body{padding-bottom:calc(62px + env(safe-area-inset-bottom))}
+ .container,.hero-content,.breadcrumbs{width:min(100% - 28px,1200px)}
+ .grid-2,.grid-3,.grid-4,.stats,.booking-layout,.form-grid,.toolbar,.footer-grid,.search-panel{grid-template-columns:minmax(0,1fr)!important}
+ .route-row{grid-template-columns:minmax(0,1fr)!important}.route-row>*{display:block!important}
+ .hero{min-height:0;padding:5.5rem 0 2.5rem}.hero-content{padding:2rem 0}
+ h1{font-size:clamp(2rem,10vw,3.25rem)}h2{font-size:clamp(1.55rem,7vw,2.35rem)}
+ .section{padding:3rem 0}.section-sm{padding:1.75rem 0}.card{padding:18px}
+ .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}.actions .btn{width:100%}
+ .mobile-book-bar{z-index:2400!important}
+ .persistent-whatsapp,.float-action.whatsapp{right:max(16px,env(safe-area-inset-right))!important;bottom:calc(78px + env(safe-area-inset-bottom))!important;width:56px!important;height:56px!important;min-width:56px!important;min-height:56px!important;z-index:2900!important}
+ html.menu-open .persistent-whatsapp,html.menu-open .float-action.whatsapp{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+ .float-action.call{right:max(16px,env(safe-area-inset-right));bottom:calc(144px + env(safe-area-inset-bottom))!important}
+}
+@media(max-width:380px){.container,.hero-content,.breadcrumbs{width:min(100% - 20px,1200px)}.brand span:last-child{font-size:.9rem}.site-header{gap:.45rem;padding-left:10px;padding-right:10px}.card{padding:15px}.mobile-book-bar a{font-size:.76rem}}
+@media(min-width:1440px){.container,.hero-content,.breadcrumbs,.content-shell{max-width:1320px}.prose{max-width:82ch}}
+@media(min-width:1920px){html{font-size:17px}.container,.hero-content,.breadcrumbs,.content-shell{max-width:1480px}}
+@media(hover:none){.card:hover,.btn:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* Persistent Call action: kept separate from WhatsApp */
+.float-action.call{display:grid!important;place-items:center!important;position:fixed!important;right:max(18px,env(safe-area-inset-right))!important;bottom:max(92px,calc(92px + env(safe-area-inset-bottom)))!important;width:58px!important;height:58px!important;min-width:58px!important;min-height:58px!important;border-radius:50%!important;background:#153b86!important;color:#fff!important;opacity:1!important;visibility:visible!important;z-index:2790!important;box-shadow:0 8px 24px rgba(0,0,0,.32)!important;text-decoration:none!important}
+.float-action.call svg{display:block!important;width:25px!important;height:25px!important;fill:none!important;stroke:currentColor!important;stroke-width:2!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.float-action.call:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:768px){.float-action.call{right:max(16px,env(safe-area-inset-right))!important;bottom:calc(144px + env(safe-area-inset-bottom))!important;width:56px!important;height:56px!important;min-width:56px!important;min-height:56px!important;z-index:2890!important}html.menu-open .float-action.call{opacity:0!important;visibility:hidden!important;pointer-events:none!important}}
+
+
+/* Homepage hero: prevent clipping below the sticky header */
+.hero{min-height:0!important;align-items:start!important;padding:0!important}
+.hero-content{margin:0 auto!important;padding:clamp(48px,6vw,80px) 0 clamp(56px,7vw,96px)!important}
+.hero h1{max-width:1050px;font-size:clamp(3rem,6vw,5.4rem);text-wrap:balance}
+.hero .lead{max-width:820px}
+@media(min-width:769px) and (max-height:760px){.hero-content{padding:34px 0 48px!important}.hero h1{font-size:clamp(2.7rem,5.4vw,4.7rem);margin-top:.1em}.hero .lead{font-size:1.08rem}.hero .actions{margin:18px 0}.hero .search-panel{margin-top:20px}}
+@media(max-width:768px){.hero-content{padding:34px 0 48px!important}.hero h1{font-size:clamp(2.35rem,11vw,3.5rem)}.hero .lead{font-size:1rem}.hero .search-panel{margin-top:18px}}
+
+
+/* Official Trinity Express image logo */
+.brand{flex:0 0 auto;line-height:0}.brand-logo{display:block;width:clamp(150px,15vw,196px);height:auto;max-height:58px;object-fit:contain;border-radius:8px}
+.footer .brand-logo{width:min(196px,100%);max-height:64px}
+@media(max-width:768px){.brand-logo{width:clamp(136px,42vw,174px);max-height:52px}.site-header{min-height:68px;height:auto;padding-top:7px;padding-bottom:7px}}
+@media(max-width:380px){.brand-logo{width:132px;max-height:46px}}
+
+
+/* High-contrast logo presentation */
+.brand-logo{background:#fff;padding:3px 5px;border:1px solid #dce5f2;box-shadow:0 2px 8px rgba(11,23,54,.12)}
+.footer .brand-logo{background:#fff;border-color:rgba(255,255,255,.45)}
+
+
+/* Booking office feature */
+.contact-office-feature{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);align-items:center;gap:clamp(24px,4vw,52px);margin-bottom:clamp(28px,5vw,56px);padding:clamp(16px,2.5vw,28px);border:1px solid #dce5f2;border-radius:24px;background:#fff;box-shadow:0 16px 44px rgba(11,38,84,.12);overflow:hidden}
+.contact-office-photo{margin:0;min-width:0}.contact-office-photo img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px;background:#e9eef7}.contact-office-photo figcaption{padding:10px 4px 0;color:#52617a;font-size:.9rem;line-height:1.45}.contact-office-copy{min-width:0}.contact-office-copy h2{margin-top:.25rem;text-wrap:balance}.contact-office-copy .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.gallery-item[data-category="service"] img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+@media(max-width:850px){.contact-office-feature{grid-template-columns:minmax(0,1fr)}.contact-office-copy .actions{display:grid;grid-template-columns:minmax(0,1fr)}.contact-office-copy .btn{width:100%;text-align:center}}
+
+
+/* Homepage hero artwork */
+.homepage-hero{background-color:#071126!important;background-image:url('../images/hero.webp')!important;background-repeat:no-repeat!important;background-position:center 50%!important;background-size:cover!important;isolation:isolate}
+.homepage-hero::after{content:""!important;position:absolute!important;inset:0!important;background:linear-gradient(90deg,rgba(7,17,38,.96) 0%,rgba(7,17,38,.88) 40%,rgba(7,17,38,.56) 72%,rgba(7,17,38,.28) 100%)!important;opacity:1!important;z-index:0!important;pointer-events:none}
+.homepage-hero .hero-content{z-index:2!important}.homepage-hero .eyebrow{color:#ffd27a}.homepage-hero h1{max-width:920px}.homepage-hero .lead{color:#eef4ff;text-shadow:0 1px 2px rgba(0,0,0,.28)}
+@media(max-width:768px){.homepage-hero{background-position:48% center!important;background-size:cover!important}.homepage-hero::after{background:linear-gradient(180deg,rgba(7,17,38,.78) 0%,rgba(7,17,38,.88) 52%,rgba(7,17,38,.94) 100%)!important}.homepage-hero h1{max-width:100%}}
+
+
+/* Real fleet and terminal photography */
+.media-showcase{padding-top:clamp(24px,4vw,48px)!important;padding-bottom:clamp(24px,4vw,48px)!important}.media-showcase-card{margin:0;overflow:hidden;border:1px solid #dce5f2;border-radius:24px;background:#fff;box-shadow:0 16px 44px rgba(11,38,84,.12)}.media-showcase-card img{display:block;width:100%;aspect-ratio:16/7;object-fit:cover;background:#e9eef7}.media-showcase-card figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:18px;padding:16px 20px;color:#52617a}.media-showcase-card figcaption strong{color:#0b1736;font-size:1.05rem}.section-inline-photo{margin:0 0 20px}.section-inline-photo img{display:block;width:100%;max-height:420px;object-fit:cover;border-radius:16px}.section-inline-photo figcaption{padding-top:9px;color:#647089;font-size:.9rem}.fleet-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.fleet-photo-grid figure{margin:0}.fleet-photo-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}.fleet-photo-grid figcaption{padding-top:12px;color:#52617a}.photo-band img{aspect-ratio:4/3;object-fit:cover}.gallery-item img{height:auto;object-fit:cover}
+@media(max-width:850px){.media-showcase-card img{aspect-ratio:4/3}.media-showcase-card figcaption{display:block}.media-showcase-card figcaption span{display:block;margin-top:4px}.fleet-photo-grid{grid-template-columns:minmax(0,1fr)}}
+
+
+/* Sitewide discoverability navigation */
+.main-nav>.nav-more,.nav-links>.nav-more{position:relative;color:var(--muted,#647089)}.nav-more summary{display:flex;align-items:center;gap:6px;min-height:42px;padding:8px 4px;cursor:pointer;font-weight:700;list-style:none;white-space:nowrap}.nav-more summary::-webkit-details-marker{display:none}.nav-more summary::after{content:"⌄";font-size:.9em;transition:transform .18s ease}.nav-more[open] summary::after{transform:rotate(180deg)}.nav-more summary:hover,.nav-more summary.active{color:var(--text,#0b1736)}.nav-more summary:focus-visible{outline:3px solid #f5a623;outline-offset:3px;border-radius:6px}.nav-more-menu{position:absolute;top:calc(100% + 10px);right:0;z-index:3400;display:grid;grid-template-columns:repeat(2,minmax(150px,1fr));gap:4px;width:360px;padding:12px;border:1px solid #dce5f2;border-radius:16px;background:#fff;color:#0b1736;box-shadow:0 18px 50px rgba(11,23,54,.2)}.nav-more:not([open])>.nav-more-menu{display:none}.nav-more-menu a{display:flex!important;align-items:center;min-height:42px;padding:9px 11px!important;border-radius:10px;color:#52617a!important;font-size:.92rem;font-weight:700!important}.nav-more-menu a:hover,.nav-more-menu a:focus-visible,.nav-more-menu a.active{background:#f3f6fb;color:#b86f00!important}.main-nav>.mobile-explore-links,.nav-links>.mobile-explore-links{display:none}.footer-discovery{margin:0 0 32px;padding:0 0 26px;border-bottom:1px solid rgba(255,255,255,.16)}.footer-discovery>strong{display:block;margin-bottom:14px;color:#fff;font-size:1.05rem}.footer-discovery>div{display:flex;flex-wrap:wrap;gap:8px 18px}.footer-discovery a{display:inline-flex!important;margin:0!important;color:#dbe5ff!important;font-weight:650}.footer-discovery a:hover,.footer-discovery a:focus-visible{color:#ffcb6b!important;text-decoration:underline}
+@media(max-width:768px){.main-nav>.nav-more,.nav-links>.nav-more{display:none!important}.main-nav>.mobile-explore-links,.nav-links>.mobile-explore-links{display:block!important;padding-top:12px}.mobile-explore-links>span{display:block;padding:12px 8px 7px;color:#6a7488;font-size:.75rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.main-nav .mobile-explore-links>a,.nav-links .mobile-explore-links>a{display:flex!important;align-items:center!important;min-height:50px;padding:9px 8px!important;border-bottom:1px solid #edf0f5!important;color:#15203b!important;font-size:1.02rem!important;font-weight:700!important}.main-nav .mobile-explore-links>a:hover,.main-nav .mobile-explore-links>a:focus-visible,.main-nav .mobile-explore-links>a.active,.nav-links .mobile-explore-links>a:hover,.nav-links .mobile-explore-links>a:focus-visible,.nav-links .mobile-explore-links>a.active{background:#f6f8fb!important;color:#b86f00!important;padding-left:16px!important}.footer-discovery>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px}}
+
+
+/* Lightweight rendering and shared WhatsApp label */
+.persistent-whatsapp span{position:absolute;right:68px;white-space:nowrap;background:#071126;color:#fff;padding:.5rem .7rem;border-radius:9px;font:700 13px/1.2 system-ui,sans-serif;opacity:0;pointer-events:none;transform:translateX(8px);transition:opacity .18s ease,transform .18s ease}.persistent-whatsapp:hover span,.persistent-whatsapp:focus-visible span{opacity:1;transform:none}img{height:auto}@media(max-width:768px){.site-header,.btn-secondary{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}}@media(max-width:640px){.persistent-whatsapp span{display:none}}

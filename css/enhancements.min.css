@@ -30,11 +30,11 @@
 .html-util-27{margin-top:18px;}
 .html-util-28{margin-top:16px;}
 /* Sitewide responsive and persistent-action rules */
-html{background:#f5f7fb;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html{background:#f5f7fb;-webkit-text-size-adjust:100%;}
 body{min-width:0;overflow-x:hidden}
 main,section,article,header,footer,nav,.container,.content-shell,.prose{min-width:0}
 img,svg,video,iframe{max-width:100%;height:auto}
-table{max-width:100%}.table-wrap,.comparison-wrapper,.seo-table{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{max-width:100%}.table-wrap,.comparison-wrapper,.seo-table{max-width:100%;overflow-x:auto;}
 pre,code{max-width:100%;overflow-wrap:anywhere}h1,h2,h3,p,a,li{overflow-wrap:break-word}
 .container,.hero-content,.breadcrumbs{width:min(1200px,calc(100% - 40px));margin-left:auto;margin-right:auto}
 .persistent-whatsapp,.float-action.whatsapp{display:grid!important;place-items:center!important;position:fixed!important;right:max(18px,env(safe-area-inset-right))!important;bottom:max(22px,env(safe-area-inset-bottom))!important;width:58px!important;height:58px!important;min-width:58px!important;min-height:58px!important;border-radius:50%!important;background:#25d366!important;color:#fff!important;opacity:1!important;visibility:visible!important;z-index:2800!important;box-shadow:0 8px 24px rgba(0,0,0,.32)!important;text-decoration:none!important}
@@ -72,7 +72,7 @@ pre,code{max-width:100%;overflow-wrap:anywhere}h1,h2,h3,p,a,li{overflow-wrap:bre
 /* Homepage hero: prevent clipping below the sticky header */
 .hero{min-height:0!important;align-items:start!important;padding:0!important}
 .hero-content{margin:0 auto!important;padding:clamp(48px,6vw,80px) 0 clamp(56px,7vw,96px)!important}
-.hero h1{max-width:1050px;font-size:clamp(3rem,6vw,5.4rem);text-wrap:balance}
+.hero h1{max-width:1050px;font-size:clamp(3rem,6vw,5.4rem);}
 .hero .lead{max-width:820px}
 @media(min-width:769px) and (max-height:760px){.hero-content{padding:34px 0 48px!important}.hero h1{font-size:clamp(2.7rem,5.4vw,4.7rem);margin-top:.1em}.hero .lead{font-size:1.08rem}.hero .actions{margin:18px 0}.hero .search-panel{margin-top:20px}}
 @media(max-width:768px){.hero-content{padding:34px 0 48px!important}.hero h1{font-size:clamp(2.35rem,11vw,3.5rem)}.hero .lead{font-size:1rem}.hero .search-panel{margin-top:18px}}
@@ -92,7 +92,7 @@ pre,code{max-width:100%;overflow-wrap:anywhere}h1,h2,h3,p,a,li{overflow-wrap:bre
 
 /* Booking office feature */
 .contact-office-feature{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);align-items:center;gap:clamp(24px,4vw,52px);margin-bottom:clamp(28px,5vw,56px);padding:clamp(16px,2.5vw,28px);border:1px solid #dce5f2;border-radius:24px;background:#fff;box-shadow:0 16px 44px rgba(11,38,84,.12);overflow:hidden}
-.contact-office-photo{margin:0;min-width:0}.contact-office-photo img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px;background:#e9eef7}.contact-office-photo figcaption{padding:10px 4px 0;color:#52617a;font-size:.9rem;line-height:1.45}.contact-office-copy{min-width:0}.contact-office-copy h2{margin-top:.25rem;text-wrap:balance}.contact-office-copy .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.gallery-item[data-category="service"] img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.contact-office-photo{margin:0;min-width:0}.contact-office-photo img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px;background:#e9eef7}.contact-office-photo figcaption{padding:10px 4px 0;color:#52617a;font-size:.9rem;line-height:1.45}.contact-office-copy{min-width:0}.contact-office-copy h2{margin-top:.25rem;}.contact-office-copy .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.gallery-item[data-category="service"] img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
 @media(max-width:850px){.contact-office-feature{grid-template-columns:minmax(0,1fr)}.contact-office-copy .actions{display:grid;grid-template-columns:minmax(0,1fr)}.contact-office-copy .btn{width:100%;text-align:center}}
 
 

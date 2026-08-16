@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Trinity Bus Express Fleet | Executive & Cross-Border Coaches</title>
+  <meta name="description" content="Explore the Trinity Bus Express fleet, including documented Scania and Yutong coaches used on regional and cross-border services. See seating, comfort, luggage, safety and accessibility guidance.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icons/favicon.svg"><link rel="stylesheet" href="css/site.min.css"></head>
+
+
+<body>
+
+<header class="site-header"><a class="brand" href="index.html"><img class="brand-logo" src="images/trinity-express-logo.webp" width="196" height="64" alt="Trinity Bus Express" decoding="async" fetchpriority="high"></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="main-nav" aria-label="Primary"><a href="index.html">Home</a><a href="routes.html">Routes</a><a href="booking.html">Book</a><a href="destinations.html">Destinations</a><details class="nav-more"><summary class="active">Explore</summary><div class="nav-more-menu"><a href="fleet.html" class="active" aria-current="page">Fleet</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="safety.html">Safety</a><a href="parcel-delivery.html">Parcel Delivery</a><a href="travel-guides.html">Travel Guides</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></div></details><a href="contact.html">Contact</a><div class="mobile-explore-links"><span>Explore Trinity Express</span><a href="fleet.html" class="active" aria-current="page">Fleet</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="safety.html">Safety</a><a href="parcel-delivery.html">Parcel Delivery</a><a href="travel-guides.html">Travel Guides</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></div></nav></header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+
+    <div class="eyebrow">Regional and cross-border coach fleet</div>
+
+    <h1>Trinity Bus Express Fleet</h1>
+
+    <p>Trinity Express has been documented operating Scania and Yutong coaches on East African routes. Fleet configuration and onboard amenities differ by vehicle, so passengers should confirm the assigned coach and available features when booking.</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#fleet">Explore the Fleet</a>
+      <a class="btn btn-secondary" href="booking.html">Book a Journey</a>
+    </div>
+
+    <div class="grid quick-grid">
+
+      <div class="card quick-card">
+        <div class="label">Documented chassis</div>
+        <div class="value">Scania</div>
+      </div>
+
+      <div class="card quick-card">
+        <div class="label">Documented coach model</div>
+        <div class="value">Yutong ZK6116D</div>
+      </div>
+
+      <div class="card quick-card">
+        <div class="label">Documented service type</div>
+        <div class="value">Cross-border coaches</div>
+      </div>
+
+      <div class="card quick-card">
+        <div class="label">Published capacity example</div>
+        <div class="value">52 passengers</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="section-sm media-showcase">
+  <div class="container">
+    <figure class="media-showcase-card">
+      <img src="images/trinity-fleet-lineup-1280.webp" width="1537" height="1023" loading="lazy" decoding="async" alt="Lineup of blue and white Trinity Express coaches" srcset="images/trinity-fleet-lineup-640.webp 640w, images/trinity-fleet-lineup-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px">
+      <figcaption><strong>Regional coach fleet</strong><span>A lineup of Trinity Express regional coaches.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="notice">
+      Fleet details change as vehicles rotate between routes. A published Nairobi to Kampala Trinity service has listed 52 passenger places, but this should not be treated as the seat count for every Trinity coach. Confirm the specific coach configuration when booking.
+    </div>
+  </div>
+</section>
+
+<section id="fleet">
+  <div class="container">
+
+    <h2>Coach types documented in the Trinity fleet</h2>
+    <p class="muted">The names “Trinity Executive Coach” and “Trinity Cross-Border Coach” below describe website service categories. They do not claim a separate manufacturer model or fixed specification.</p>
+
+    <div class="grid fleet-grid">
+
+      <article class="card fleet-card">
+
+        <img
+          class="fleet-image"
+          src="images/trinity-fleet-lineup-1280.webp" width="1537" height="1023" decoding="async"
+          alt="Trinity Express blue and white cross-border coach"
+          loading="lazy" srcset="images/trinity-fleet-lineup-640.webp 640w, images/trinity-fleet-lineup-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px">
+
+        <div class="fleet-body">
+
+          <span class="badge">Website category</span>
+
+          <h2>Trinity Executive Coach</h2>
+
+          <p class="muted">A presentation category for modern long-distance coaches used within the Trinity network. Public fleet references document Scania and Yutong vehicles.</p>
+
+          <div class="spec-grid">
+
+            <div class="spec">
+              <strong>Coach manufacturers</strong>
+              <span class="muted">Scania and Yutong documented</span>
+            </div>
+
+            <div class="spec">
+              <strong>Seat configuration</strong>
+              <span class="muted">Varies by vehicle</span>
+            </div>
+
+            <div class="spec">
+              <strong>Number of seats</strong>
+              <span class="muted">Confirm assigned coach</span>
+            </div>
+
+            <div class="spec">
+              <strong>Route use</strong>
+              <span class="muted">Regional and long-distance services</span>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+      <article class="card fleet-card">
+
+        <img
+          class="fleet-image"
+          src="images/cross-border-coach-road-1280.webp" width="1396" height="1127" decoding="async"
+          alt="Trinity Express coach showing Nairobi Kampala Kigali destinations"
+          loading="lazy" srcset="images/cross-border-coach-road-640.webp 640w, images/cross-border-coach-road-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px">
+
+        <div class="fleet-body">
+
+          <span class="badge">Website category</span>
+
+          <h2>Trinity Cross-Border Coach</h2>
+
+          <p class="muted">Used here to describe coaches operating international routes within East Africa. Public fleet references document Scania F-series coaches and Yutong ZK6116D coaches associated with Trinity Express.</p>
+
+          <div class="spec-grid">
+
+            <div class="spec">
+              <strong>Documented model</strong>
+              <span class="muted">Yutong ZK6116D</span>
+            </div>
+
+            <div class="spec">
+              <strong>Documented chassis</strong>
+              <span class="muted">Scania F / Scania F310 references</span>
+            </div>
+
+            <div class="spec">
+              <strong>Passenger capacity</strong>
+              <span class="muted">One published service lists 52</span>
+            </div>
+
+            <div class="spec">
+              <strong>Typical use</strong>
+              <span class="muted">International route operations</span>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Passenger comfort and onboard features</h2>
+    <p class="muted">Feature availability differs between coaches and routes. Confirm the assigned vehicle before relying on a specific amenity.</p>
+
+    <div class="grid feature-grid">
+
+      <article class="card feature-card">
+        <h3>Seat configuration</h3>
+        <p class="muted">Exact layouts vary by coach. Public photos show conventional forward-facing coach seating with a central aisle.</p>
+        <span class="status">Varies by coach</span>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Number of seats</h3>
+        <p class="muted">A published Nairobi to Kampala listing shows 52 passenger places. Other vehicles may use different layouts.</p>
+        <span class="status">52 on one documented service</span>
+      </article>
+
+      <article class="card feature-card">
+        <h3>USB charging</h3>
+        <p class="muted">USB or phone charging has been reported on Trinity coaches, but availability should be confirmed for the assigned bus.</p>
+        <span class="status">Confirm before travel</span>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Air conditioning</h3>
+        <p class="muted">Air conditioning has been reported for Trinity coach services. Operating status and availability vary by vehicle.</p>
+        <span class="status">Confirm before travel</span>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Reclining seats</h3>
+        <p class="muted">Reclining seating appears in public Trinity fleet imagery and passenger-service descriptions. Seat condition and adjustment range vary.</p>
+        <span class="status">Varies by coach</span>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Luggage allowance</h3>
+        <p class="muted">Do not assume a fixed weight or bag count from the fleet type. Check the current ticket conditions for your route.</p>
+        <span class="status">Route-specific</span>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Safety equipment</h3>
+        <p class="muted">Required emergency and road-safety equipment depends on applicable law and the vehicle. Specific Trinity equipment inventories should be verified by the operator.</p>
+        <span class="status">Operator confirmation required</span>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Accessibility</h3>
+        <p class="muted">Public sources reviewed do not provide enough detail to promise wheelchair lifts, low-floor boarding or dedicated wheelchair spaces on every coach.</p>
+        <span class="status">Ask before booking</span>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Cross-border operation</h3>
+        <p class="muted">Trinity Express is documented operating international passenger services between East African cities including Kigali and Kampala, with additional regional routes.</p>
+        <span class="status">Documented service type</span>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Fleet specification summary</h2>
+
+    <div class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Fleet item</th>
+            <th>What is publicly documented</th>
+            <th>Passenger guidance</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Scania coaches</td>
+            <td>Scania F-series coaches with regional bodywork are documented in Trinity fleet references.</td>
+            <td>Confirm the exact vehicle assigned to your route.</td>
+          </tr>
+
+          <tr>
+            <td>Yutong coaches</td>
+            <td>Yutong ZK6116D coaches are documented in Trinity fleet references.</td>
+            <td>Features vary by individual coach.</td>
+          </tr>
+
+          <tr>
+            <td>Seat capacity</td>
+            <td>One published Nairobi to Kampala service lists 52 passenger places.</td>
+            <td>Do not assume every Trinity bus has 52 seats.</td>
+          </tr>
+
+          <tr>
+            <td>USB charging</td>
+            <td>Reported on Trinity coach service descriptions.</td>
+            <td>Confirm availability on your assigned bus.</td>
+          </tr>
+
+          <tr>
+            <td>Air conditioning</td>
+            <td>Reported on Trinity coach service descriptions.</td>
+            <td>Availability and operation vary.</td>
+          </tr>
+
+          <tr>
+            <td>Reclining seats</td>
+            <td>Shown and described in public Trinity fleet material.</td>
+            <td>Seat style differs by coach.</td>
+          </tr>
+
+          <tr>
+            <td>Luggage</td>
+            <td>No single fleet-wide allowance verified from the sources reviewed.</td>
+            <td>Check the route and ticket conditions.</td>
+          </tr>
+
+          <tr>
+            <td>Accessibility</td>
+            <td>No fleet-wide wheelchair-accessibility specification verified.</td>
+            <td>Contact the operator before booking if assistance is required.</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<section id="interior-gallery"><div class="container"><h2>Interior gallery</h2><p class="muted">Coach interiors and amenities can vary by assigned vehicle. Confirm important features during booking.</p><div class="fleet-photo-grid"><figure class="card"><img src="images/coach-interior-cabin-1280.webp" width="1537" height="1023" loading="lazy" decoding="async" alt="Wide view of a Trinity Express coach cabin and passenger seats" srcset="images/coach-interior-cabin-640.webp 640w, images/coach-interior-cabin-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>Full coach cabin with forward-facing seating and a central aisle.</figcaption></figure><figure class="card"><img src="images/coach-interior-wide-1280.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Trinity Express coach interior with central aisle and overhead lighting" srcset="images/coach-interior-wide-640.webp 640w, images/coach-interior-wide-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>Bright coach interior with an open aisle and overhead lighting.</figcaption></figure><figure class="card"><img src="images/executive-reclining-seats-1280.webp" width="1402" height="1122" loading="lazy" decoding="async" alt="Brown reclining Trinity Express executive coach seats with leg rests" srcset="images/executive-reclining-seats-640.webp 640w, images/executive-reclining-seats-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>Executive-style reclining seats with individual leg rests.</figcaption></figure><figure class="card"><img src="images/passenger-legroom-1280.webp" width="1448" height="1086" loading="lazy" decoding="async" alt="Passenger legroom behind Trinity Express coach seats" srcset="images/passenger-legroom-640.webp 640w, images/passenger-legroom-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>Passenger legroom and seat-back storage inside a Trinity Express coach.</figcaption></figure><figure class="card"><img src="images/onboard-usb-charging-1280.webp" width="1448" height="1086" loading="lazy" decoding="async" alt="USB charging ports and power socket inside a Trinity Express coach" srcset="images/onboard-usb-charging-640.webp 640w, images/onboard-usb-charging-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>Onboard USB charging ports and a power outlet on an equipped coach.</figcaption></figure></div></div></section>
+
+<section id="exterior-gallery"><div class="container"><h2>Exterior gallery</h2><p class="muted">Trinity-branded coaches at terminals, in cities, and on regional routes.</p><div class="fleet-photo-grid"><figure class="card"><img src="images/terminal-fleet-nairobi-1280.webp" width="900" height="1600" loading="lazy" decoding="async" alt="Trinity Express coaches parked outside a city terminal" srcset="images/terminal-fleet-nairobi-640.webp 640w, images/terminal-fleet-nairobi-1280.webp 900w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>Trinity Express coaches ready for departure at a city terminal.</figcaption></figure><figure class="card"><img src="images/nairobi-kampala-coach-1280.webp" width="1308" height="1202" loading="lazy" decoding="async" alt="Trinity Express coach displaying Nairobi and Kampala route branding" srcset="images/nairobi-kampala-coach-640.webp 640w, images/nairobi-kampala-coach-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>A Trinity Express coach serving the Nairobi–Kampala corridor.</figcaption></figure><figure class="card"><img src="images/cross-border-coach-road-1280.webp" width="1396" height="1127" loading="lazy" decoding="async" alt="Trinity Express cross-border coach travelling on an East African road" srcset="images/cross-border-coach-road-640.webp 640w, images/cross-border-coach-road-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>A Trinity Express coach operating on a regional road corridor.</figcaption></figure><figure class="card"><img src="images/coach-boarding-terminal-1280.webp" width="1448" height="1086" loading="lazy" decoding="async" alt="Passenger boarding a Trinity Express coach at the terminal" srcset="images/coach-boarding-terminal-640.webp 640w, images/coach-boarding-terminal-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>Passenger boarding at a Trinity Express terminal.</figcaption></figure><figure class="card"><img src="images/trinity-fleet-lineup-1280.webp" width="1537" height="1023" loading="lazy" decoding="async" alt="Lineup of blue and white Trinity Express coaches" srcset="images/trinity-fleet-lineup-640.webp 640w, images/trinity-fleet-lineup-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>A lineup of Trinity Express regional coaches.</figcaption></figure><figure class="card"><img src="images/trinity-coach-city-1280.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Trinity Express coach parked on a tree-lined city road" srcset="images/trinity-coach-city-640.webp 640w, images/trinity-coach-city-1280.webp 1280w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>Trinity Express coach prepared for a regional journey.</figcaption></figure><figure class="card"><img src="images/night-coach-nairobi-kampala-1280.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="Trinity Express Nairobi Kampala coach prepared for night travel" srcset="images/night-coach-nairobi-kampala-640.webp 640w, images/night-coach-nairobi-kampala-1280.webp 1254w" sizes="(max-width: 768px) calc(100vw - 32px), (max-width: 1280px) calc(100vw - 80px), 1200px"><figcaption>A Nairobi–Kampala coach prepared for an evening departure.</figcaption></figure></div></div></section>
+
+<section>
+  <div class="container">
+
+    <h2>Accessibility information</h2>
+
+    <div class="card html-util-21">
+
+      <p>Passengers who use wheelchairs, walking aids or require boarding assistance should contact Trinity Bus Express before booking. Public fleet information reviewed for this page does not establish a consistent wheelchair lift, low-floor entrance or dedicated wheelchair space across the entire fleet.</p>
+
+      <p class="muted">When contacting the operator, provide your route, date, mobility needs, mobility-device dimensions where relevant and the type of assistance required.</p>
+
+      <a class="btn btn-secondary" href="contact.html">Ask About Accessibility</a>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Fleet FAQ</h2>
+
+    <div class="faq">
+
+      <details>
+        <summary>What buses does Trinity Express use?</summary>
+        <p class="muted">Public fleet references document Scania coaches and Yutong ZK6116D coaches associated with Trinity Express operations.</p>
+      </details>
+
+      <details>
+        <summary>How many seats does a Trinity bus have?</summary>
+        <p class="muted">One published Nairobi to Kampala service lists 52 passenger places. The capacity should not be assumed for every vehicle because layouts vary.</p>
+      </details>
+
+      <details>
+        <summary>Do Trinity buses have USB charging?</summary>
+        <p class="muted">Charging facilities have been reported on Trinity coaches. Confirm availability for your assigned vehicle before travel.</p>
+      </details>
+
+      <details>
+        <summary>Do Trinity buses have air conditioning?</summary>
+        <p class="muted">Air conditioning has been reported on Trinity coach services, but availability and operating condition differ by vehicle.</p>
+      </details>
+
+      <details>
+        <summary>Do the seats recline?</summary>
+        <p class="muted">Reclining coach seating is shown and reported in public Trinity material. Seat type varies between vehicles.</p>
+      </details>
+
+      <details>
+        <summary>Are Trinity buses wheelchair accessible?</summary>
+        <p class="muted">A fleet-wide wheelchair-accessibility specification was not verified from the sources reviewed. Contact the operator before booking if you need specific assistance.</p>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="card cta">
+
+      <h2>Choose your Trinity Bus Express route</h2>
+
+      <p class="muted">Check your route and confirm the assigned coach, seat availability and onboard features before travel.</p>
+
+      <a class="btn btn-primary" href="routes.html">View Bus Routes</a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer"><nav class="footer-discovery" aria-label="Explore Trinity Express"><strong>Explore Trinity Express</strong><div><a href="routes.html">Routes</a><a href="fleet.html">Fleet</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="safety.html">Safety</a><a href="parcel-delivery.html">Parcel Delivery</a><a href="travel-guides.html">Travel Guides</a><a href="contact.html">Contact</a></div></nav><div class="footer-grid"><div><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="images/trinity-express-logo.webp" width="196" height="64" alt="Trinity Bus Express" decoding="async" loading="lazy"></a><p>Cross-border bus travel information and booking requests for routes linking major East African cities across Kenya, Uganda, Rwanda, South Sudan, DRC, and Burundi.</p></div><div><h3>Routes</h3><a href="routes/nairobi-to-kampala.html">Nairobi to Kampala</a><a href="routes/nairobi-to-kigali.html">Nairobi to Kigali</a><a href="routes/nairobi-to-juba.html">Nairobi to Juba</a><a href="routes/nairobi-to-goma.html">Nairobi to Goma</a><a href="routes.html">All Routes Directory</a></div><div><h3>Travel Help</h3><a href="travel-guides.html">Travel Guides</a><a href="blog/passport-requirements.html">Travel Documents</a><a href="blog/cross-border-customs-guide.html">Border Customs Guide</a><a href="faq.html">FAQ & Help Center</a><a href="html-sitemap.html">HTML Sitemap</a></div><div><h3>Policies</h3><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a href="refund-policy.html">Cancellation & Refund Policy</a></div><div><h3>Contact</h3><a href="tel:+254754932823">+254 754 932 823</a><a href="https://wa.me/254754932823">WhatsApp Booking</a><a href="contact.html">Contact Desk</a></div></div><div class="legal">© <span data-current-year></span> Trinity Bus Express. Booking requests require verification. Prices are estimates and subject to change. | <a href="html-sitemap.html">Sitemap</a></div></footer><div class="mobile-book-bar"><a href="booking.html">Book Seat</a><a href="https://wa.me/254754932823">WhatsApp</a><a href="tel:+254754932823">Call Desk</a></div><a class="float-action whatsapp" href="https://wa.me/254754932823" aria-label="Book on WhatsApp" target="_blank" rel="noopener"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a><a class="float-action call" href="tel:+254754932823" aria-label="Call Trinity Bus Express"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  }
+</script>
+
+<script src="js/app.min.js" defer></script></body>
+</html>
