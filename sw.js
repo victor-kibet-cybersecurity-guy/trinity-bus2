@@ -1,4 +1,4 @@
-const CACHE="tbe-v5";
+const CACHE="tbe-v6";
 const SHELL=["./","./index.html","./routes.html","./booking.html","./css/site.min.css","./js/app.min.js","./icons/favicon.svg","./images/trinity-express-logo.webp","./images/hero.webp"];
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
